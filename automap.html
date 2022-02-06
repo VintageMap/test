@@ -2,19 +2,46 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Use minimum-scale=1 to enable GPU rasterization -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
-    <meta name="Description" content="Interactive map of Vintage Civ 1.0">
-    <title>VC Map: The First Vintage Civ Map</title>
-    <meta property="og:type" content="object" />
-    <meta property="og:url" content="https://vintagemap.github.io/test/automap.html" />
-    <meta property="og:site_name" content="Vintage Civ 1.0" />
-    <meta property="og:title" content="VCmap" />
-    <meta property="og:description" content="Interactive map of Vintage Civ 1.0" />
-    <meta property="og:image" content="https://github.com/VintageMap/test/blob/main/favicon.ico" />
-    <link rel="icon" type="image/png" href="https://github.com/VintageMap/test/blob/main/favicon.ico" />
+	<meta charset="utf-8">
+	<title>Automap</title>
+	<style>html, body, .map {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	/* outline: 1px dotted black; */
+}
+
+.infobox {
+	width: 15em;
+	/* height: 15em; */
+	background-color: rgba(200, 200, 200, 0.5);
+	left: 0;
+	top: 0;
+	font-family: sans-serif;
+	position: absolute;
+	z-index: 1;
+}
+
+h1 {
+	font-size: 22px;
+	margin: .6em 1em;
+	text-align: center;
+}
+
+.infoboxTable {
+	margin: .3em auto;
+	width: 90%;
+	outline: 1px solid #333;
+}
+
+.infoboxTable th {
+	width: 30%;
+}
+
+.infoboxTable td {
+	text-align: right;
+}</style>
 </head>
 
 <body>
